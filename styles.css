@@ -143,3 +143,7 @@ body {
 .cs-button-solid:hover {
     background-color: var(--primaryLight);
 }
+
+.photos {
+    transition: transform 0.3s ease-out;
+}
