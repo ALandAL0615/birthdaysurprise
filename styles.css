@@ -28,10 +28,19 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#gallery .photos {
+#gallery {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.photos {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    transition: transform 0.5s ease;
 }
 
 .photos img {
@@ -46,7 +55,7 @@ footer {
     background-color: #d81b60;
     color: white;
     padding: 10px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     border-top: 5px solid #c2185b;
